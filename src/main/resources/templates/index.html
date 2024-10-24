@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영화 API</title>
     <link rel="stylesheet" th:href="@{/style.css}">
+    <script type="text/javascript" src="/script.js"></script> <!-- 외부 JS 파일 추가 -->
 </head>
 <body>
     <div class="header">
@@ -19,16 +20,17 @@
                 더욱 풍요롭고 편안한 영화 서비스를 즐겨보세요.</p>
         </div>
         <div class="formArea">
-            <form action="#" method="get">
+            <form id="searchForm">
                 <select name="types" id="type">
-                    <option value="제목">제목</option>
-                    <option value="장르">장르</option>
-                    <option value="감독명">감독명</option>
+                    <option value="nm">제목</option>
+                    <option value="gn">장르</option>
+                    <option value="pn">감독명</option>
                 </select>
-                <input type="text" placeholder="입력">
-                <button type="submit" value="submit">검색</button>
+                <input type="text" placeholder="입력" required>
+                <button type="submit">검색</button>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>

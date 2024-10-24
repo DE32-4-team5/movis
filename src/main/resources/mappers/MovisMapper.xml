@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.samdul.movis.mapper.MovisMapper"> <!-- 패키지 경로 수정 -->
+    <select id="findByNm" resultType="com.samdul.movis.entity.MovisEntity"> <!-- 패키지 경로 수정 -->
+        SELECT
+            movieCd, movieNm, movieNmEn, openDt, repGenreNm, repNationNm, peopleNm
+        FROM MOVIS_TBL
+        WHERE movieNm LIKE CONCAT('%', #{nm}, '%')
+    </select>
+    <select id="findByGn" resultType="com.samdul.movis.entity.MovisEntity"> <!-- 패키지 경로 수정 -->
+        SELECT
+            movieCd, movieNm, movieNmEn, openDt, repGenreNm, repNationNm, peopleNm
+        FROM MOVIS_TBL
+        WHERE repGenreNm LIKE CONCAT('%', #{gn}, '%')
+    </select>
+    <select id="findByPn" resultType="com.samdul.movis.entity.MovisEntity"> <!-- 패키지 경로 수정 -->
+        SELECT
+            movieCd, movieNm, movieNmEn, openDt, repGenreNm, repNationNm, peopleNm
+        FROM MOVIS_TBL
+        WHERE peopleNm LIKE CONCAT('%', #{pn}, '%')
+    </select>
+</mapper>
