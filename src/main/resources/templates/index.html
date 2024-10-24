@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>영화 API</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
-    main
+    <div class="header">
+        <a class="logo" href="index.html">Movis<span class="sd">삼둘</span></a>
+        <a class="openapi" href="index.html">OPEN API</a>
+        <a class="key" href="index.html">키 발급/관리</a>
+    </div>
+    <div class="container">
+        <div class="intro">
+            <h1>OPEN API 서비스</h1>
+            <p>엔코아 삼둘무비전산망에서 제공하는 오픈API 서비스로<br>
+                더욱 풍요롭고 편안한 영화 서비스를 즐겨보세요.</p>
+        </div>
+        <div class="formArea">
+            <form action="#" method="get">
+                <select name="types" id="type">
+                    <option value="제목">제목</option>
+                    <option value="장르">장르</option>
+                    <option value="감독명">감독명</option>
+                </select>
+                <input type="text" placeholder="입력">
+                <button type="submit" value="submit">검색</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
