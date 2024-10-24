@@ -13,6 +13,10 @@
 - [x] hello world!
 
 - [x] initial frontend html, css, javascript
+![image](https://github.com/user-attachments/assets/8f662f56-f7d3-462f-80cb-7b7705352cf2)
+![image](https://github.com/user-attachments/assets/da2de0a3-7d24-4ce5-bf0f-8e1f9b701fa0)
+
+    
 - [ ] js 결과 메시지 업데이트 or 페이지 이동 기능 구현
 - [ ] 쿼리 속도 검증 nginx
 - [ ] 속도 개선 방안 검토
