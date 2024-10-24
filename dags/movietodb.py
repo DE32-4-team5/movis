@@ -70,10 +70,23 @@ def requestData():
 
 	response = requests.get(url, params=params)
 
-	if response.status_code == 200:
+    if response.status_code == 200:
         result = response.json()
+        pg = (result["movieListResult"]["totCnt"] // 10) + 1
+        for i in range(1,pg+1):
+            params["curPage"] = i
+            res = requests.get(url, params=params)
+            result_pg = res.json()
+            real_result = result_pg['movieListResult']['movieList']
+            all_data.extend(real_result)
+        return all_data
 
 	else:
 		print("Request Failed : ", response.status.code)
+def jsontodf(): # json파일 데이터프레임으로 변경
+    data = requestData()
+    df = pd.DataFrame(data)
+    df2 = df[['movieCd', 'movieNm', 'movieNmEn', 'openDt', 'repGenreNm', 'repNationNm', 'directors']] # 원하는 열 추출
+    df2["directors"] = df2["directors"].apply(lambda x: x[0]['peopleNm']) # 감독명 열 변환
 
-
+    return df2
