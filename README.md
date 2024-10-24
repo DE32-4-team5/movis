@@ -11,3 +11,5 @@
 - jdbc connect setting. src/main/resources/application.yaml 8888:8972 
 - table initial setting. src/main/resources/db_config/initdb.d/create_table.sql
 - [x] hello world!
+
+- [x] initial frontend html, css
