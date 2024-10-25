@@ -1,22 +1,32 @@
-## movis project
+# 영화 조회 웹 애플리케이션
 
-## main
+이 애플리케이션은 Java Spring Framework와 영화진흥위원회 영화 목록 API를 사용하여 영화 정보를 조회할 수 있는 웹 애플리케이션입니다.
 
-## startspring
-- [x] spring project & dependencies [https://start.spring.io/](https://start.spring.io/)
-- settings : Gradle (Groovy), Java, 3.3.4, Project Metadata(com.samdul.movis, java17)
-- dependencies : Thymeleaf, Spring Web, Spring Boot DevTools, Lombok, MyBatis Framework, MariaDB Driver
+## 목차
 
-- [x] docker compose & mariadb, spring project connect
-- jdbc connect setting. src/main/resources/application.yaml 8888:8972 
-- table initial setting. src/main/resources/db_config/initdb.d/create_table.sql
-- [x] hello world!
+- [소개](#소개)
+- [기술 스택](#기술-스택)
+- [설치 방법](#설치-방법)
+- [사용 방법](#사용-방법)
+- [API 문서](#api-문서)
+- [기여](#기여)
+- [라이센스](#라이센스)
 
-- [x] initial frontend html, css, javascript
-![image](https://github.com/user-attachments/assets/8f662f56-f7d3-462f-80cb-7b7705352cf2)
-![image](https://github.com/user-attachments/assets/da2de0a3-7d24-4ce5-bf0f-8e1f9b701fa0)
+## 소개
 
-    
-- [ ] js 결과 메시지 업데이트 or 페이지 이동 기능 구현
-- [ ] 쿼리 속도 검증 nginx
-- [ ] 속도 개선 방안 검토
+이 애플리케이션은 사용자가 영화진흥위원회 API를 통해 최신 영화 목록을 조회하고, 각 영화의 상세 정보를 확인할 수 있도록 합니다. 사용자 친화적인 인터페이스를 제공하여 쉽게 사용할 수 있습니다.
+
+## 기술 스택
+
+- Java 11
+- Spring Boot
+- Thymeleaf
+- RESTful API
+- 영화진흥위원회 영화 목록 API
+- Airflow
+
+## install
+```bash
+git clone https://github.com/yourusername/movie-viewer.git
+cd movie-viewer
+```
