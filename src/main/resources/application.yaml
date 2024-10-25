@@ -1,0 +1,12 @@
+server:
+  port: 8972
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver 
+    url: jdbc:mariadb://localhost:6033/team5
+    username: team5
+    password: movis
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml  # classpath 추가
