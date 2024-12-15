@@ -19,7 +19,7 @@
   - RESTful API
   - 영화진흥위원회 영화 목록 API
 
-<img src="https://github.com/user-attachments/assets/9779b12d-90b4-4f54-a2be-29f2af602bd9" alt="이미지 설명" width="30%" height="30%">
+<img src="https://github.com/user-attachments/assets/c34b1a29-1781-4475-9866-69ba3ca39856" alt="이미지 설명" width="70%" height="70%">
 
 ## 사용 방법
 조회 사이트 Url : http://3.35.137.110:8080/
